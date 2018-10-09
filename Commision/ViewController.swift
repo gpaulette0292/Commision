@@ -27,6 +27,11 @@ class ViewController: UIViewController
     }
     func getInput() -> Double
     {
+        if let commissionPay = commissionPayTextField.text{
+            print("Has Data")
+        } else {
+            print("No Data")
+        }
         return 13.97
 }
 
