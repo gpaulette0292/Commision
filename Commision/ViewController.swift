@@ -27,10 +27,10 @@ class ViewController: UIViewController
     }
     func getInput() -> Double
     {
-        if let commissionPay = commissionPayTextField.text{
-            print("Has Data")
+        if let commissionPay = commissionPayTextField.text, let pay = Double (commissionPay){
+            print("Has Data and can be turned into an integer")
         } else {
-            print("No Data")
+            print("No Data or cant turn into an integer")
         }
         return 13.97
 }
